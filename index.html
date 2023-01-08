@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat-Based Browser Game</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <h1>Chat-Based Browser Game</h1>
+    <div id="chat">
+      <h2>Chat</h2>
+      <div id="messages">
+        <!-- messages will be added here dynamically -->
+      </div>
+      <form id="message-form" action="#" method="POST">
+          <input type="text" id="message-input" name="message" placeholder="Type your message here...">
+          <button type="submit">Send</button>
+        </form>
+    </div>
+     <div id = "player-join-form">
+         <h2>Join as a player</h2>
+    <form id="name-form">
+
+  <label for="name-input">Enter your name:</label>
+  <input type="text" id="name-input" name="name">
+  <button type="submit">Submit</button>
+</form>
+    </div>
+    <div id="players">
+      <h2>Players</h2>
+      <ul id="player-list">
+        <!-- player list will be added here dynamically -->
+      </ul>
+    </div>
+    <div id="voting">
+      <h2>Voting</h2>
+      <form id="vote-form">
+        <label for="vote-input">Vote to eliminate a player:</label>
+        <select id="vote-input">
+          <!-- options for voting will be added here dynamically -->
+        </select>
+        <button type="submit">Vote</button>
+      </form>
+    </div>
+<script src="script.js"></script>
+  </body>
+</html>
